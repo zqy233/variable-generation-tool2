@@ -10,6 +10,7 @@
 
 ## 效果图
 
+![image](https://user-images.githubusercontent.com/57588553/174968234-a5ae1222-a834-4dbc-a529-f0c380b0dcba.png)
 
 
 ## 新特性/New Features
