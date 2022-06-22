@@ -483,19 +483,19 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@logicflow/core@^1.1.15":
-  version "1.1.15"
-  resolved "https://registry.npmmirror.com/@logicflow/core/-/core-1.1.15.tgz"
+"@logicflow/core@^1.1.15", "@logicflow/core@^1.1.20":
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/@logicflow/core/-/core-1.1.20.tgz#6b87503282685fad4d4ce97362b786dd0d71611d"
   dependencies:
     "@types/mousetrap" "^1.6.4"
     mousetrap "^1.6.5"
     preact "^10.4.8"
 
-"@logicflow/extension@^1.1.15":
-  version "1.1.15"
-  resolved "https://registry.npmmirror.com/@logicflow/extension/-/extension-1.1.15.tgz"
+"@logicflow/extension@^1.1.20":
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/@logicflow/extension/-/extension-1.1.20.tgz#e14fcdb8ad6bacb9fea63e0c78bfb1ef134ca3ae"
   dependencies:
-    "@logicflow/core" "^1.1.15"
+    "@logicflow/core" "^1.1.20"
     ids "^1.0.0"
     preact "^10.4.8"
 
