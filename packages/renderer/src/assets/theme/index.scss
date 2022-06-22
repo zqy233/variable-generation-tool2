@@ -1,0 +1,49 @@
+// 修改element-plus样式
+// 主题颜色
+
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": #0182a2
+    )
+  )
+);
+// :export {
+//   primaryColor: #0182a2;
+// }
+
+:root {
+  --bg-color: #ecf8f9;
+  --red: #ff9b9b;
+  --blue: #0182a2;
+  --yellow: #e6a33c;
+  --green: #16a085;
+  --font-color: #0182a2;
+}
+$bg-color: var(--bg-color);
+$red: var(--red);
+$blue: var(--blue);
+$yellow: var(--yellow);
+$green: var(--green);
+$font-color: var(--font-color);
+
+@keyframes showLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes showTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
