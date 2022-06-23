@@ -1,6 +1,6 @@
 # 🥳 变量生成工具2.0
 
-> 基于 electron-vite-vue 模板
+> 基于 electron-vite-vue 模板, 翻译基于百度翻译api
 >
 > electron支持多操作系统，目前只做了windows端的适配，因为笔记本是windows的
 
