@@ -7,7 +7,7 @@ import AutoImport from "unplugin-auto-import/vite"
 import Components from "unplugin-vue-components/vite"
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import Pages from "vite-plugin-pages"
-import commonjs from "vite-plugin-commonjs"
+// import commonjs from "vite-plugin-commonjs"
 import { resolve } from "path"
 
 export default defineConfig({

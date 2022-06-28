@@ -29,7 +29,6 @@
     "unplugin-auto-import": "^0.6.9",
     "unplugin-vue-components": "^0.17.18",
     "vite": "^2.8.6",
-    "vite-plugin-commonjs": "^0.2.6",
     "vite-plugin-electron-renderer": "^0.3.2",
     "vite-plugin-pages": "^0.22.0",
     "vite-plugin-resolve": "^2.0.1",
@@ -48,13 +47,10 @@
     "vue"
   ],
   "dependencies": {
-    "@logicflow/core": "^1.1.15",
-    "@logicflow/extension": "^1.1.15",
     "axios": "^0.26.1",
     "element-plus": "^2.2.6",
     "md5": "^2.3.0",
     "qs": "^6.10.3",
-    "shelljs": "^0.8.5",
     "vue-router": "^4.0.14"
   }
 }
