@@ -631,10 +631,6 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/json-schema@^7.0.8":
-  version "7.0.11"
-  resolved "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.11.tgz"
-
 "@types/lodash-es@^4.17.6":
   version "4.17.6"
   resolved "https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz"
@@ -888,11 +884,11 @@ agent-base@6, agent-base@^6.0.2:
   dependencies:
     debug "4"
 
-ajv-keywords@^3.4.1, ajv-keywords@^3.5.2:
+ajv-keywords@^3.4.1:
   version "3.5.2"
   resolved "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.5.2.tgz"
 
-ajv@^6.10.0, ajv@^6.12.0, ajv@^6.12.5:
+ajv@^6.10.0, ajv@^6.12.0:
   version "6.12.6"
   resolved "https://registry.npmjs.org/ajv/-/ajv-6.12.6.tgz"
   dependencies:
@@ -1058,10 +1054,6 @@ balanced-match@^1.0.0:
 base64-js@^1.3.1, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
-
-big.js@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.npmmirror.com/big.js/-/big.js-5.2.2.tgz"
 
 binary-extensions@^2.0.0:
   version "2.2.0"
@@ -1658,10 +1650,6 @@ emmet@^2.3.0:
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz"
-
-emojis-list@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmmirror.com/emojis-list/-/emojis-list-3.0.0.tgz"
 
 encodeurl@^1.0.2:
   version "1.0.2"
@@ -2610,14 +2598,6 @@ lazy-val@^1.0.4, lazy-val@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/lazy-val/-/lazy-val-1.0.5.tgz"
 
-loader-utils@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.npmmirror.com/loader-utils/-/loader-utils-2.0.2.tgz"
-  dependencies:
-    big.js "^5.2.2"
-    emojis-list "^3.0.0"
-    json5 "^2.1.2"
-
 local-pkg@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmmirror.com/local-pkg/-/local-pkg-0.4.1.tgz"
@@ -3263,15 +3243,12 @@ sanitize-filename@^1.6.3:
   dependencies:
     truncate-utf8-bytes "^1.0.0"
 
-sass-loader@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.npmmirror.com/sass-loader/-/sass-loader-10.2.0.tgz"
+sass-loader@^13.0.2:
+  version "13.0.2"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.0.2.tgz#e81a909048e06520e9f2ff25113a801065adb3fe"
   dependencies:
     klona "^2.0.4"
-    loader-utils "^2.0.0"
     neo-async "^2.6.2"
-    schema-utils "^3.0.0"
-    semver "^7.3.2"
 
 sass@^1.49.11:
   version "1.49.11"
@@ -3284,14 +3261,6 @@ sass@^1.49.11:
 sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.4.tgz"
-
-schema-utils@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.npmmirror.com/schema-utils/-/schema-utils-3.1.1.tgz"
-  dependencies:
-    "@types/json-schema" "^7.0.8"
-    ajv "^6.12.5"
-    ajv-keywords "^3.5.2"
 
 semver-compare@^1.0.0:
   version "1.0.0"
