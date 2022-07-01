@@ -50,7 +50,7 @@
   "dependencies": {
     "@logicflow/core": "^1.1.15",
     "@logicflow/extension": "^1.1.15",
-    "axios": "^0.26.1",
+    "axios": "^0.27.2",
     "element-plus": "^2.2.6",
     "md5": "^2.3.0",
     "qs": "^6.10.3",
