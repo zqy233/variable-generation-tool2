@@ -1,6 +1,8 @@
 import { app, BrowserWindow, shell, Menu, Tray, ipcMain, nativeImage, screen } from "electron"
 import { release } from "os"
 import { join } from "path"
+import { autoUpdater } from "electron-updater"
+
 // Disable GPU Acceleration for Windows 7
 if (release().startsWith("6.1")) app.disableHardwareAcceleration()
 
@@ -121,9 +123,44 @@ async function createWindow() {
     if (url.startsWith("https:")) shell.openExternal(url)
     return { action: "deny" }
   })
-}
-app.whenReady().then(createWindow)
 
+  app.on("ready", function () {
+    autoUpdater.checkForUpdatesAndNotify()
+  })
+
+  function sendStatusToWindow(text: string) {
+    win.webContents.send("message", text)
+  }
+
+  autoUpdater.on("checking-for-update", () => {
+    sendStatusToWindow("Checking for update...")
+  })
+
+  autoUpdater.on("update-available", info => {
+    sendStatusToWindow("Update available.")
+  })
+
+  autoUpdater.on("update-not-available", info => {
+    sendStatusToWindow("Update not available.")
+  })
+
+  autoUpdater.on("error", err => {
+    sendStatusToWindow("Error in auto-updater. " + err)
+  })
+
+  autoUpdater.on("download-progress", progressObj => {
+    let log_message = "Download speed: " + progressObj.bytesPerSecond
+    log_message = log_message + " - Downloaded " + progressObj.percent + "%"
+    log_message = log_message + " (" + progressObj.transferred + "/" + progressObj.total + ")"
+    sendStatusToWindow(log_message)
+  })
+
+  autoUpdater.on("update-downloaded", info => {
+    sendStatusToWindow("Update downloaded")
+  })
+}
+
+app.whenReady().then(createWindow)
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit()
 })

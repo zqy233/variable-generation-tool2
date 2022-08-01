@@ -18,7 +18,8 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "packages/renderer/src/assets/theme/index.scss" as *;`
+        additionalData: `@use "packages/renderer/src/assets/theme/index.scss" as *;`,
+        charset: false
       }
     }
   },

@@ -34,5 +34,13 @@
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
     "shortcutName": "variable-generation"
-  }
+  },
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "zqy233",
+      "repo": "variable-generation-tool2",
+      "releaseType": "release"
+    }
+  ]
 }

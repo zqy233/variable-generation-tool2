@@ -39,6 +39,7 @@
 
 <script setup lang="ts">
 import { ipcRenderer } from "electron"
+
 import axios from "axios"
 import MD5 from "md5"
 import Qs from "qs"
@@ -51,6 +52,11 @@ const r = ref("")
 const show = ref(false) // 触发el-card显现动画
 const filter = ref(true) // 触发背景模糊动画
 const width = ref("")
+
+ipcRenderer.on("message", function (event, text) {
+  console.log(text)
+  ElMessage.info("收到消息：" + text)
+})
 
 /** 当前主题 */
 const themeMode = ref("dark")
